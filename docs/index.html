@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your job hunt on silent · Pingbird</title>
+<meta name="description" content="Pingbird — your job hunt on silent. It only chirps when you must act.">
+<link rel="icon" type="image/png" href="assets/pingbird-logo-32.png">
+<style>
+:root{--blue:#1D4ED8;--navy:#1E3A8A;--ink:#0F172A;--slate:#475569;--bg:#F8FAFC;--amber:#F59E0B;--light:#DBEAFE}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+header{background:linear-gradient(135deg,#2563EB,#1E3A8A);color:#fff;padding:20px 0}
+header .wrap{display:flex;align-items:center;gap:14px}
+header img{width:44px;height:44px;border-radius:10px}
+header a{color:#fff;text-decoration:none;font-weight:700;font-size:20px}
+nav{margin-left:auto;display:flex;gap:18px}
+nav a{font-weight:500;font-size:15px;opacity:.92}
+main{padding:44px 0 70px}
+h1{font-size:34px;color:var(--navy);margin-bottom:14px}
+h2{font-size:22px;color:var(--navy);margin:34px 0 10px}
+p,li{color:var(--slate);margin-bottom:10px}
+ul,ol{margin:0 0 14px 22px}
+a{color:var(--blue)}
+table{border-collapse:collapse;width:100%;margin:14px 0}
+th,td{border:1px solid #E2E8F0;padding:9px 12px;text-align:left;color:var(--slate);font-size:15px}
+th{background:#EFF6FF;color:var(--navy)}
+code{background:#EFF6FF;padding:2px 6px;border-radius:5px;font-size:.92em;color:var(--navy)}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;margin:8px 10px 8px 0}
+.btn.alt{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+.hero{display:flex;gap:36px;align-items:center;flex-wrap:wrap;margin-bottom:30px}
+.hero img{width:190px;border-radius:36px;box-shadow:0 16px 40px rgba(30,58,138,.25)}
+.tag{font-size:21px;color:var(--slate)}
+.card{background:#fff;border:1px solid #E2E8F0;border-radius:14px;padding:20px 22px;margin:14px 0}
+footer{border-top:1px solid #E2E8F0;padding:26px 0;color:#94A3B8;font-size:14px}
+footer a{color:#64748B}
+.updated{font-size:14px;color:#94A3B8;margin-bottom:26px}
+</style></head>
+<body>
+<header><div class="wrap">
+  <img src="assets/pingbird-logo-128.png" alt="Pingbird logo">
+  <a href="index.html">Pingbird</a>
+  <nav>
+    <a href="setup.html">Setup</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</div></header>
+<main><div class="wrap">
+
+<div class="hero">
+  <img src="assets/pingbird-logo-512.png" alt="Pingbird">
+  <div>
+    <h1>Your job hunt on silent.</h1>
+    <p class="tag">Pingbird watches your Gmail, tracks every job application in one clean sheet, and pings your phone <strong>only when you must act</strong>.</p>
+    <p>
+      <a class="btn" href="https://github.com/shardulinamdar4/pingbird">Get Pingbird</a>
+      <a class="btn alt" href="setup.html">5-minute setup</a>
+    </p>
+  </div>
+</div>
+<img src="assets/pingbird-hero-1280x800.png" alt="Pingbird overview" style="width:100%;border-radius:14px;border:1px solid #E2E8F0">
+<h2>Why it's different</h2>
+<div class="card"><p><strong>The tracker maintains itself.</strong> Every job tracker asks you to log applications and move cards. Pingbird inverts it: acknowledgements, assessments, interviews, offers and rejections are read from Gmail and become one deduplicated row per application — matched by job&nbsp;ID, company&nbsp;+&nbsp;role, and email thread. Stages only move forward; recruiter name and email are captured automatically.</p></div>
+<div class="card"><p><strong>Silence by default.</strong> Noise is archived (only when hard-coded safety rules and the AI independently agree), action email stays pinned unread in your Inbox, and your phone receives one content-free ping: "open your Tracker." Nothing else, ever.</p></div>
+<div class="card"><p><strong>Private by architecture, not by promise.</strong> There is no server and no account. The entire product is one open-source Apps Script file running inside <em>your</em> Google account. Sanitized excerpts go only to the AI provider you configure with your own key. <a href="privacy.html">Read the full data-flow map</a>.</p></div>
+<h2>What you need</h2>
+<p>A Google account, a free <a href="https://openrouter.ai">OpenRouter</a> API key for AI classification, and the <a href="https://pocketalert.app">Pocket Alert</a> app for phone notifications. Both stay within their free tiers in normal use.</p>
+
+</div></main>
+<footer><div class="wrap">© 2026 Pingbird · MIT licensed · <a href="https://github.com/shardulinamdar4/pingbird">Source on GitHub</a> · No servers, no accounts, no tracking.</div></footer>
+</body></html>

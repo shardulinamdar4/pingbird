@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Setup · Pingbird</title>
+<meta name="description" content="Pingbird — your job hunt on silent. It only chirps when you must act.">
+<link rel="icon" type="image/png" href="assets/pingbird-logo-32.png">
+<style>
+:root{--blue:#1D4ED8;--navy:#1E3A8A;--ink:#0F172A;--slate:#475569;--bg:#F8FAFC;--amber:#F59E0B;--light:#DBEAFE}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+header{background:linear-gradient(135deg,#2563EB,#1E3A8A);color:#fff;padding:20px 0}
+header .wrap{display:flex;align-items:center;gap:14px}
+header img{width:44px;height:44px;border-radius:10px}
+header a{color:#fff;text-decoration:none;font-weight:700;font-size:20px}
+nav{margin-left:auto;display:flex;gap:18px}
+nav a{font-weight:500;font-size:15px;opacity:.92}
+main{padding:44px 0 70px}
+h1{font-size:34px;color:var(--navy);margin-bottom:14px}
+h2{font-size:22px;color:var(--navy);margin:34px 0 10px}
+p,li{color:var(--slate);margin-bottom:10px}
+ul,ol{margin:0 0 14px 22px}
+a{color:var(--blue)}
+table{border-collapse:collapse;width:100%;margin:14px 0}
+th,td{border:1px solid #E2E8F0;padding:9px 12px;text-align:left;color:var(--slate);font-size:15px}
+th{background:#EFF6FF;color:var(--navy)}
+code{background:#EFF6FF;padding:2px 6px;border-radius:5px;font-size:.92em;color:var(--navy)}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;margin:8px 10px 8px 0}
+.btn.alt{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+.hero{display:flex;gap:36px;align-items:center;flex-wrap:wrap;margin-bottom:30px}
+.hero img{width:190px;border-radius:36px;box-shadow:0 16px 40px rgba(30,58,138,.25)}
+.tag{font-size:21px;color:var(--slate)}
+.card{background:#fff;border:1px solid #E2E8F0;border-radius:14px;padding:20px 22px;margin:14px 0}
+footer{border-top:1px solid #E2E8F0;padding:26px 0;color:#94A3B8;font-size:14px}
+footer a{color:#64748B}
+.updated{font-size:14px;color:#94A3B8;margin-bottom:26px}
+</style></head>
+<body>
+<header><div class="wrap">
+  <img src="assets/pingbird-logo-128.png" alt="Pingbird logo">
+  <a href="index.html">Pingbird</a>
+  <nav>
+    <a href="setup.html">Setup</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</div></header>
+<main><div class="wrap">
+
+<h1>Setup (about 5 minutes)</h1>
+<h2>Before you start</h2>
+<ol>
+<li>Get a free <a href="https://openrouter.ai">OpenRouter</a> API key (openrouter.ai → Keys).</li>
+<li>Install <a href="https://pocketalert.app">Pocket Alert</a> on your phone and create one webhook whose <strong>Message Template is exactly</strong> <code>%message%</code>. Copy the receive URL.</li>
+</ol>
+<h2>Marketplace install</h2>
+<ol>
+<li>Install Pingbird from the Google Workspace Marketplace.</li>
+<li>Open any Google Sheet (a fresh blank one is perfect) → <strong>Extensions → Pingbird → 🚀 Quick setup</strong>.</li>
+<li>Approve the Google permissions, then paste your OpenRouter key and Pocket Alert URL when asked. Quick setup builds the whole template (Home, Tracker, Settings), sends one test AI request and one test phone ping, and installs the five daily scans (6&nbsp;AM, 10&nbsp;AM, 2&nbsp;PM, 6&nbsp;PM, 10&nbsp;PM).</li>
+<li>Run <strong>Scan now</strong> for your first scan, then <strong>Run backfill batch</strong> to import history (default 6 months; the first run asks).</li>
+</ol>
+<h2>Manual install (open source)</h2>
+<p>Prefer to run from source? Create a blank Google Sheet → Extensions → Apps Script → paste <code>Code.gs</code> and <code>appsscript.json</code> from the <a href="https://github.com/shardulinamdar4/pingbird">GitHub repo</a> → run Quick setup. Full walkthrough in the repo's <code>guides/SETUP_GUIDE.md</code>.</p>
+<h2>Daily use</h2>
+<p>Do nothing. When something needs you, the email stays unread in your Inbox with an <em>Action required</em> label and your phone gets one ping. Mark items <em>Completed</em> right from the Home screen's attention list — the Tracker, labels, and archive state sync automatically.</p>
+
+</div></main>
+<footer><div class="wrap">© 2026 Pingbird · MIT licensed · <a href="https://github.com/shardulinamdar4/pingbird">Source on GitHub</a> · No servers, no accounts, no tracking.</div></footer>
+</body></html>

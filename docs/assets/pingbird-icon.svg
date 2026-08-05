@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <clipPath id="tile"><rect x="8" y="8" width="496" height="496" rx="112"/></clipPath>
+  </defs>
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="url(#bg)"/>
+  <g clip-path="url(#tile)">
+    <!-- ping: one amber chirp with two signal arcs, kept inside the tile -->
+    <circle cx="378" cy="150" r="28" fill="#F59E0B"/>
+    <path d="M 342 84 A 96 96 0 0 1 446 186" fill="none" stroke="#FBBF24" stroke-width="22" stroke-linecap="round"/>
+    <path d="M 322 46 A 136 136 0 0 1 464 218" fill="none" stroke="#FDE68A" stroke-width="17" stroke-linecap="round"/>
+
+    <!-- bird: round body looking up toward the ping -->
+    <path d="M 142 296 L 42 250 L 112 392 Z" fill="#FFFFFF"/>
+    <circle cx="228" cy="318" r="118" fill="#FFFFFF"/>
+    <path d="M 306 228 L 366 186 L 336 270 Z" fill="#FBBF24"/>
+    <ellipse cx="196" cy="346" rx="58" ry="40" transform="rotate(-24 196 346)" fill="#DBEAFE"/>
+    <circle cx="278" cy="264" r="17" fill="#1E3A8A"/>
+    <circle cx="284" cy="258" r="5" fill="#FFFFFF"/>
+  </g>
+</svg>
