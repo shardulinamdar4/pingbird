@@ -66,7 +66,14 @@ footer a{color:#64748B}
 <h2>Phone notifications</h2>
 <p>Alerts are intentionally content-free: no sender, subject, company, role, or deadline. A notification on a lock screen reveals only that <em>something</em> in a spreadsheet needs attention.</p>
 <h2>Google user data &amp; Limited Use</h2>
-<p>Pingbird's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Gmail data is used only to provide the user-facing tracking features described here; it is never used for advertising, never sold, and never transferred except as described in the table above (to the AI provider you configure, at your direction) or as required by law.</p>
+<p>Pingbird's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the <strong>Limited Use</strong> requirements. Specifically:</p>
+<ul>
+<li><strong>Prominent user-facing features only.</strong> Gmail and other Google user data is used solely to provide the job-application tracking and alerting features described on this site and visible in the add-on's interface.</li>
+<li><strong>Never sold, never used for advertising.</strong> Your data is never sold, and is never used for advertising of any kind, including personalized, retargeting, or interest-based advertising.</li>
+<li><strong>No transfer except at your direction or as the law requires.</strong> Data is transferred only to the AI provider you configure with your own key (to classify messages) and to your own Pocket Alert webhook — both at your direction — or as required by law.</li>
+<li><strong>No human access.</strong> No human — including the developer — reads your Gmail data, except where you give explicit consent for specific messages, where necessary for security (e.g. investigating abuse) or to comply with the law, or where the data has been aggregated and anonymized. Because Pingbird has no server, your Gmail data never reaches the developer at all.</li>
+<li><strong>No AI/ML model training.</strong> Sanitized excerpts sent to your AI provider are used only to classify messages in the moment. Pingbird does not use Gmail data to develop, improve, or train generalized or non-personalized AI or machine-learning models, and requests are sent with a data-collection "deny" preference so the provider does not train on them.</li>
+</ul>
 <h2>Secrets</h2>
 <p>Your OpenRouter key and Pocket Alert webhook are stored in Google Apps Script <strong>User Properties</strong> — scoped to your Google account, never displayed in any sheet, and not included when the spreadsheet is copied.</p>
 <h2>Permissions requested, and why</h2>
